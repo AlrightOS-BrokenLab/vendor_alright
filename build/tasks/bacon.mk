@@ -16,7 +16,8 @@
 # -----------------------------------------------------------------
 # Lineage OTA update package
 
-LINEAGE_TARGET_PACKAGE := $(PRODUCT_OUT)/AlrightOS-$(LINEAGE_VERSION).zip
+ALRIGHT_BUILDTYPE := UNOFFICIAL
+LINEAGE_TARGET_PACKAGE := $(PRODUCT_OUT)/AlrightOS-$(LINEAGE_VERSION)-$(shell date +%Y%m%d)-$(ALRIGHT_BUILDTYPE)-.zip
 
 SHA256 := prebuilts/build-tools/path/$(HOST_PREBUILT_TAG)/sha256sum
 
